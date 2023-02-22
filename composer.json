@@ -1,6 +1,12 @@
 {
   "name": "dartcoder/laravel-payabl-php",
   "description": "Laravel package for Payabl",
+  "keywords": [
+    "laravel",
+    "package",
+    "client",
+    "payabl"
+  ],
   "type": "library",
   "license": "MIT",
   "autoload": {
@@ -29,14 +35,14 @@
   "extra": {
     "laravel": {
       "providers": [
-        "PayablAPI\\API\\PayablServiceProvider"
+        "PayablAPI\\PayablServiceProvider"
       ],
       "aliases": {
-        "PayablAPI": "Payabl\\API\\PayanlFacade"
+        "PayablAPI": "Payabl\\PayanlFacade"
       }
     }
   },
   "scripts": {
-      "test": "./vendor/bin/phpunit"
+    "test": "./vendor/bin/phpunit"
   }
 }
