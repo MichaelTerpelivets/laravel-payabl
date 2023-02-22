@@ -35,5 +35,8 @@
         "PayablAPI": "Payabl\\API\\PayanlFacade"
       }
     }
+  },
+  "scripts": {
+      "test": "./vendor/bin/phpunit"
   }
 }
