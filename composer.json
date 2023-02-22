@@ -1,0 +1,39 @@
+{
+  "name": "dartcoder/laravel-payabl-php",
+  "description": "Laravel package for Payabl",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "PayablAPI\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PayablAPI\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Michael Terpelyvets",
+      "email": "mterpelyvets@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.3|^8.0",
+    "guzzlehttp/guzzle": "*"
+  },
+  "require-dev": {
+    "orchestra/testbench": "*"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "PayablAPI\\API\\PayablServiceProvider"
+      ],
+      "aliases": {
+        "PayablAPI": "Payabl\\API\\PayanlFacade"
+      }
+    }
+  }
+}
